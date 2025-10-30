@@ -153,7 +153,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    min-width: 1000px;
+    mix-width: 1000px;
     margin: 0 auto;
     padding: 0;
     list-style: none;    
@@ -161,7 +161,7 @@
 
 .works-item img {
     width: 400px;
-    height: 300px;
+    height: auto;
     object-fit: cover;
     background-repeat: 12px;
     display: block;
@@ -173,12 +173,12 @@
     color: #444;
 }
 
-
-@media (max-width: 1024px){
-  .works-item { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 1024px) {
+  .works-item { width: calc(50% - 12px); }
 }
-@media (max-width: 768px){
-  .works-item { grid-template-columns: 1fr; }
+
+@media (max-width: 600px) {
+  .works-item { width: 100%; }
 }
 
 /* skill */
@@ -463,6 +463,7 @@ h1,h2 { font-size: clamp(20px, 4.5vw, 32px); line-height: 1.3; }
 
 /* 一般テキスト行間 */
 p, li, label { line-height: 1.8; }
+
 
 
 
