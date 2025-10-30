@@ -175,10 +175,10 @@
 
 
 @media (max-width: 1024px){
-  .works-grid{ grid-template-columns: repeat(2, 1fr); }
+  .works-item img{ grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px){
-  .works-grid{ grid-template-columns: 1fr; }
+  .works-item img{ grid-template-columns: 1fr; }
 }
 
 /* skill */
@@ -463,4 +463,5 @@ h1,h2 { font-size: clamp(20px, 4.5vw, 32px); line-height: 1.3; }
 
 /* 一般テキスト行間 */
 p, li, label { line-height: 1.8; }
+
 
